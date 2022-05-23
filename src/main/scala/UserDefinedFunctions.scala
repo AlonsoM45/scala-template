@@ -9,6 +9,9 @@ object Math {
             (you can ignore or delete the section 3.1, since that part is used to export a Procedure and section 3.2
             is used to export a User Defined Function, which is what we are doing in this case).
         5. Execute the SQL commands in the template file.
+        6. Your funcion should be ready. You can perform queries using this UDF as you would normally do in Snowflake.
+        7. Take into consideration that there are some limitations when creating Snowpark procedures or UDFs in Scala.
+            You can learn more about this here: https://docs.snowflake.com/en/developer-guide/snowpark/scala/creating-udfs.html
     */
     def simpleDivision(a: Double, b: Double): Double = {
         a / b
